@@ -50,10 +50,11 @@
     --color-button-secondary-text: var(--c-black);
     --color-system-overview-bg: var(--c-darker-gray);
     --color-system-overview-heading: var(--c-white);
-
     --color-system-overview-node-total: var(--c-white);
     --color-system-overview-node-active: var(--c-white);
     --color-system-overview-node: var(--c-dark-gray);
+    --color-nodes-bg: var(--c-darker-gray);
+    --color-nodes-heading: var(--c-white);
     --color-problem-heading: var(--c-light-green);
     --color-problem-card: var(--c-lighter-gray);
     --color-objective-heading: var(--c-light-green);
@@ -88,6 +89,7 @@
     --font-size-system-overview-heading: var(--fs-48);
     --font-size-system-overview-node-description: var(--fs-16);
     --font-size-system-overview-node-value: var(--fs-40);
+    --font-size-nodes-heading: var(--fs-48);
     --font-size-about-heading: var(--fs-48);
     --font-size-about-content: var(--fs-24);
     --font-size-problem-heading: var(--fs-48);
@@ -275,6 +277,33 @@
 
     .system-overview__cardtype {
       font-size: var(--font-size-system-overview-node-description);
+    }
+  }
+
+  #nodes {
+    .nodes__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: calc(55 / 16 * 1rem);
+      background-color: var(--color-nodes-bg);
+      margin-inline: calc(43 / 16 * 1rem);
+      border-radius: calc(20 / 16 * 1rem);
+      margin-bottom: calc(20 / 16 * 1rem);
+      padding-block: calc(42 / 16 * 1rem);
+    }
+    .nodes__heading {
+      font-size: var(--font-size-nodes-heading);
+      font-family: Candal, sans-serif;
+      color: var(--color-nodes-heading);
+    }
+    .nodes__cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: calc(30 / 16 * 1rem);
+      flex-direction: row;
     }
   }
 
