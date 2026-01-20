@@ -45,7 +45,7 @@
     --color-navbar: var(--c-darker-gray);
     --color-bg: var(--c-lightest-gray);
     --color-button-primary: var(--c-green);
-    --color-button-primary-text: var(--c-soft-gray);
+    --color-button-primary-text: var(--c-white);
     --color-button-secondary: var(--c-soft-gray);
     --color-button-secondary-text: var(--c-black);
     --color-system-overview-bg: var(--c-darker-gray);
@@ -59,7 +59,7 @@
     --color-problem-card: var(--c-lighter-gray);
     --color-objective-heading: var(--c-light-green);
     --color-objective-card: var(--c-light-green);
-    --color-objective-card-content: var(--c-soft-gray);
+    --color-objective-card-content: var(--c-white);
     --color-features-bg: var(--c-light-gray);
     --color-features-heading: var(--c-green);
     --color-features-content: var(--c-black);
@@ -177,6 +177,13 @@
     .topnav__homelink {
       padding-block: calc(8 / 16 * 1rem);
     }
+
+    .topnav__logo {
+      transition: opacity 0.15s;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 
   #hero {
@@ -188,6 +195,13 @@
       gap: 30px;
       margin-top: calc(12 / 16 * 1rem);
       margin-bottom: calc(70 / 16 * 1rem);
+    }
+
+    .hero__logo {
+      transition: opacity 0.15s;
+      &:hover {
+        opacity: 0.6;
+      }
     }
 
     .hero__contents {
@@ -614,6 +628,11 @@
     border-radius: calc(10 / 16 * 1rem);
     padding-block: calc(7 / 16 * 1rem);
     border: none;
+    transition: opacity 0.15s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   .secondary {
@@ -621,5 +640,10 @@
     padding-inline: calc(32 / 16 * 1rem);
     padding-block: calc(7 / 16 * 1rem);
     border-radius: calc(10 / 16 * 1rem);
+    transition: filter 0.15s;
+
+    &:hover {
+      filter: brightness(1.05);
+    }
   }
 }
