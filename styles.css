@@ -478,6 +478,20 @@
       gap: calc(5 / 16 * 1rem);
       font-size: var(--font-size-objective-content-card);
     }
+
+    @media (max-width: 1536px) {
+      .problem-objectives__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: calc(40 / 16 * 1rem);
+        flex-wrap: wrap;
+      }
+
+      .problem-objectives__problemcards {
+        flex-direction: column;
+      }
+    }
   }
 
   #features {
